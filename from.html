@@ -6,23 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <form action=" https://chrome.google.com/webstore?hl=en " method="post" > 
+<body style="background-color:aquamarine ;">
+    <form action="welcome.html" method="get" > 
 
-<caption> Student Form </caption>
+        <h1> <marquee direction="right" onmouseover="stop();"  onmouseleave="start();"> ## Rajshahi 
+            University Admission Form ##</marquee>
+        
+            <img src="C:\Users\MSI\Downloads\Rajshahi_University_Admin_Building.jpg  "  height="450" width="1200">
+        </h1>
+
+<caption> <h2> Student Form:</h2>  </caption>
 
 <P> User Name:<br/>
-  <input type="text" placeholder="name"/> 
+  <input type="text" placeholder="name"  required/> 
 </P>
 
 <P> User Password:<br/>
-    <input type="password" placeholder="password"/> 
+    <input type="password" placeholder="password" required/> 
 </P>
 
-<input type="checkbox" id="yes" /> <label for="yes">Yes</label> <br/>
+<input type="checkbox" id="conform" required/> <label for="conform">Conform</label> <br/>
 
 <p> Gender: <br/>
-    <input type="radio" id="male" name="gender"/>  <label for="male"> Male</label><br/>
+    <input type="radio" id="male" name="gender" required />  <label for="male"> Male</label><br/>
     <input type="radio" id="fmale" name="gender"/>  <label for="fmale"> Fmale</label><br/>
     <input type="radio" id="other" name="gender"/>  <label for="other"> Other</label>
 
@@ -30,11 +36,11 @@
 
 <p>
     HSC/Equiv Roll:<br/>
-    <input type="number" placeholder=" Select Roll"/>
+    <input type="number" placeholder=" Select Roll" required/>
  </P>
 
 <p>HSC/Equiv Board:<br/>
-<select name="board"> 
+<select name="board" > 
     <option value="none"> Please Select</option>
     <option value="dhaka" > Dhaka</option>
     <option value="barisal"> Borisal</option>
@@ -50,7 +56,7 @@
 </p>
   
 <p>HSC/Equiv Passing Year:<br/>
-<select name="year">
+<select name="year" >
     <option value="none"> Please Select</option>
     <option value="number"> 2021</option>
 </select>
@@ -58,7 +64,7 @@
 
 <p>
 SSC/Equiv Roll:<br/>
-<input type="number" placeholder=" Select Roll"/>
+<input type="number" placeholder=" Select Roll" required/>
 </P>
 
 <p>SSC/Equiv Board:<br/>
@@ -81,12 +87,12 @@ SSC/Equiv Roll:<br/>
    SSC/Equiv Passing Year:<br/>
 <select name="year">
     <option value="none"> Please Select</option>
-    <option value="number"> 2019</option>
+    <option value="number" > 2019</option>
     <option value="number"> 2018</option>
 </select>
 </P>
 
-<input type="submit" value="Log In"/>
+<input type="submit" value=" Submit"> 
 
 <input type="reset" value="Reset"/>
 
